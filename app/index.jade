@@ -1,0 +1,39 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		meta(name="robots", content="index,follow")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0")
+
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css")
+		link(rel="stylesheet", href="css/main.css")
+
+		title YOUR TITLE HERE
+
+		meta(itemprop="name", content="xxxxxxxxxx")
+		meta(itemprop="description", content="xxxxxxxxxx")
+		meta(itemprop="image", content="http://daily.redbullmusicacademy.com/specials/xxxxxxxxxx")
+		script(src="data/aframe.min.js")
+
+	body
+
+
+		.container
+			.overlay
+				h1 CreepZone
+			a-scene
+				a-entity
+					a-animation(attribute="rotation", to="0 360 0", dur="100000", fill="forwards", repeat="indefinite", easing="linear")
+					a-sky(src="images/diamond.jpg")
+					a-entity(rotation="0 0 0")
+						
+
+						a-image(src="images/eric.png", position="0 1 0", scale="2 2 2", width="1")
+
+						
+
+						//- a-camera(position="0 1.8 1.5", cursor-visible="false")
+
+
+		
+		script(src="js/bundle.js")
